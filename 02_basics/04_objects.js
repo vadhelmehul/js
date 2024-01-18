@@ -1,4 +1,4 @@
-
+/*
 const tinderUser = {
 
 }
@@ -34,3 +34,36 @@ console.log(Object.values(tinderUser))
 console.log(Object.entries(tinderUser))
 
 console.log(tinderUser.hasOwnProperty('name')) // it will show if the entered property exist or not in this object
+*/
+
+// object distructuring
+
+const course= {
+    coursename: "javascript",
+    price: "999",
+    courseinstructor: "maulik"
+}
+
+// course.courseinstructor 
+
+const {courseinstructor: instructor} = course //another way to get value in object
+// console.log(courseinstructor)
+console.log(instructor)
+
+
+/*   json is look like this in object type
+{
+    "name" : "maulik",
+    "surname" : "vadher"
+}
+*/
+
+/* json also in array type and its look like this
+
+[
+    {},
+    {},
+    {}
+]
+
+ */
