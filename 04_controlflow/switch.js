@@ -12,6 +12,6 @@ switch (month){
         break;
     default:
         console.log("none of above");
-        break;
+        break; 
     
 }
