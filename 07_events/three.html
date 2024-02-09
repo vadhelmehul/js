@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>vadhel mehul</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+    <script>
+
+        const saydate = function (str) {
+            console.log(str, Date.now());
+        }
+
+
+        let intervalId; // Declare intervalId outside of event listeners
+
+        document.getElementById('start').addEventListener('click', function () {
+            intervalId = setInterval(saydate, 1000, 'hi'); // Start the interval
+        });
+
+        document.getElementById('stop').addEventListener('click', function () {
+            clearInterval(intervalId); // Stop the interval
+        });
+
+
+    </script>
+</body>
+
+</html>
